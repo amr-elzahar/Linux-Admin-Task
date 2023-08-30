@@ -12,7 +12,7 @@ This assessment is an integral part of the LinuxPlus Company DevOps internship p
 
 **3. NFS Server:** This server hosts a 5TB file system shared with other servers. It allows multiple servers to access the same files.
 
-**4. NFS Client Configuration:** Each server mounts the NFS share on the /opt/ecommerce directory using the /etc/fstab file. This ensures persistent and automatic mounting of the shared NFS directory during system boot.
+**4. NFS Client Configuration:** Each server mounts the NFS share on the /opt/ecommerce directory using the /etc/fstab file.
 
 ### Directories:
 
