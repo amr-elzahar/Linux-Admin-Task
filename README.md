@@ -4,7 +4,7 @@
 
 This assessment is an integral part of the LinuxPlus Company DevOps internship program.
 
-### Server Infrastructure
+### Infrastructure
 
 **1. Five RHEL Servers:** These servers are running the web application and are used by developers.
 
@@ -20,7 +20,7 @@ This assessment is an integral part of the LinuxPlus Company DevOps internship p
 
 **2. /app/backend-dev:** This directory with permissions set to (rwx rx rx) and owned by `dev` and `dev` group. It's a temporary directory for training purposes.
 
-### User & Groups:
+### Users & Groups:
 
 **1.admins:** Administrators group.
 
