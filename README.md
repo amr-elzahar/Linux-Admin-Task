@@ -94,7 +94,11 @@ sudo cat /var/log/messages
 
 Use temporary ACL:
 
-1. Create new user called `temp_user`
+1. Create new user called `temp_user`:
+
+```
+useradd temp_user
+```
 
 2. Add temporary ACL entry for the user on `/app/backend-dev`:
 
@@ -106,7 +110,7 @@ setfacl -m u:temp_user:rw /app/backend-dev
 
 **4. Slow Web Application Response**
 
-1. Check network latency between frontend, backend and database servers
+1. Check network latency between frontend, backend and database servers using `ping`
 2. Check NFS server performance using `nfsstat`
 3. Check database performane and use indexes to optimize query execution time
 4. Check server's resources (CPU, memory, disk) using `top`
@@ -174,7 +178,7 @@ crontab -e
 
 **10. File System Reaches 90% Utilization**
 
-1. Identify large files conduming the most space using `du` command
+1. Identify large files conduming the most space using `du -h` command
 2. Check if the logs are not rotated properly.
 3. Remove unnecessary files.
 4. Resize the filesystem and add additional storage.
@@ -196,7 +200,7 @@ tar -czvf backup.tar.gz /path/to/source_directory
 
 - `-c`: To create a new archive
 - `-z`: To use gzip compression algorithm
-- `-v`: verbose mode, shows the progress of the transfer.
+- `-v`: verbose mode, shows the progress of the process.
 - `-f`: To specify the name of the archive file will be created
 - `backup.tar.gz`: The new archive file
 - `/path/to/source_directory`: Path to the directory that I want to archive
@@ -222,7 +226,7 @@ tar -xzvf backup.tar.gz -C /path/to/destination_directory
 
 - `-x`: To Extract files from the archive
 - `-z`: To use decompression algorithm
-- `-v`: Verbose mode, shows the progress of the transfer.
+- `-v`: Verbose mode, shows the progress of the process.
 - `-f`: To specify the name of the archove file from which files will be extracted
 - `backup.tar.gz`: The name of the archive file that you want to extract from
 - `-C`: To specify the destination directory
