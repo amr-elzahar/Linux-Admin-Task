@@ -1,8 +1,8 @@
-# Linux Administration Task | LinuxPlus
+# Linux Administration Assessment | LinuxPlus
 
 ### Description
 
-This task is an integral part of the LinuxPlus Company DevOps internship program.
+This assessment is an integral part of the LinuxPlus Company DevOps internship program.
 
 ### Server Infrastructure
 
